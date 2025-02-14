@@ -1,4 +1,4 @@
-package DTO;
+package com.bruno.feliciano.desafio_votacao.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,6 +7,6 @@ import lombok.Setter;
 @Setter
 public class ResultadoVotacaoDTO {
     private Long pautaId;
-    private long votosSim;
-    private long votosNao;
+    private Long votosSim;
+    private Long votosNao;
 }

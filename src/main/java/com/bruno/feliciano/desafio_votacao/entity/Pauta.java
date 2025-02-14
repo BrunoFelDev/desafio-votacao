@@ -1,4 +1,4 @@
-package Entity;
+package com.bruno.feliciano.desafio_votacao.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -8,8 +8,8 @@ import java.time.LocalDateTime;
 @Table(name = "pauta")
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class Pauta {
     @Id

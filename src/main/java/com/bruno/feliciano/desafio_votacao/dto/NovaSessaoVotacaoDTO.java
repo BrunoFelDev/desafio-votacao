@@ -1,4 +1,4 @@
-package DTO;
+package com.bruno.feliciano.desafio_votacao.dto;
 
 import lombok.Getter;
 import lombok.Setter;

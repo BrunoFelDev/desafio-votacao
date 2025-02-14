@@ -1,4 +1,4 @@
-package Entity;
+package com.bruno.feliciano.desafio_votacao.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

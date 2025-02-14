@@ -1,4 +1,4 @@
-package Entity;
+package com.bruno.feliciano.desafio_votacao.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -21,7 +21,7 @@ public class SessaoVotacao {
     private Pauta pauta;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime abertaEm = LocalDateTime.now();
+    private LocalDateTime abertaEm;
 
     private LocalDateTime encerradaEm;
 
@@ -30,6 +30,12 @@ public class SessaoVotacao {
 
     public boolean isAtiva() {
         return encerradaEm == null || encerradaEm.isAfter(LocalDateTime.now());
+    }
+
+    public SessaoVotacao(Pauta pauta, Long duracaoMinutos) {
+        this.pauta = pauta;
+        this.abertaEm = LocalDateTime.now();
+        this.encerradaEm = this.abertaEm.plusMinutes(duracaoMinutos != null ? duracaoMinutos : 1);
     }
 }
 

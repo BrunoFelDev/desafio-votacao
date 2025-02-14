@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://<HOST>:<PORT>/<DATABASE>
-    username: <USERNAME>
-    password: <PASSWORD>
+    url: jdbc:postgresql://equitably-psychic-gannet.data-1.use1.tembo.io:5432/postgres
+    username: postgres
+    password: KBW45g50wY0nkCAs
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect

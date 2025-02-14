@@ -1,4 +1,4 @@
-package Exceptions;
+package com.bruno.feliciano.desafio_votacao.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
